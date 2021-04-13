@@ -4,11 +4,11 @@
 <head>
     <nav class="navigation">
         <ul>
-            <li>אבטיח</li>
-            <li>אני</li>
-            <li class="temp">יודע</li>
-            <li>זאת</li>
-            <li>פתאום</li>
+            <li><a href="https://www.avatiach.com/" target="_blank">אבטיח: האתר</a></li>
+            <li><a href="https://www.facebook.com/Afarsek" target="_blank">אבטיח בפייסבוק</a></li>
+            <li class="temp"><a href="https://www.instagram.com/avatiach_official/" target="_blank">אבטיח באינסטגרם</a></li>
+            <li><a href="https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%98%D7%99%D7%97" target="_blank">אבטיח בויקיפדיה</a></li>
+            <li><a href="https://rlv.zcache.com/one_in_a_melon_cute_watermelon_pun_poster-r16951d4be0a64d6fba504c412c4d7cb8_w2q_8byvr_704.jpg" target="_blank">סתם אבטיח</a></li>
         </ul>
     </nav>
 
@@ -20,27 +20,40 @@
 </head>
 
 <body>
-
     <div id="banner">
         <!-- ? -->
-        <div class="content">
-            <h1>עשה לך אבטיח</h1>
+        <h1>עשה לך אבטיח</h1>
+    </div>
+
+    <h2><span class=instrusions>בחרו צבע רקע, צרו אבטיח משלכם </span><span class=instrusions>ושמרו </span><span class=icons><img src = "C:\Users\USER\Desktop\Web\avatiach\images\save.png" height=18px width=18px alt="(לחצו כאן)"></span> <span class=instrusions>או שתפו:</span>        <span class=icons><img src = "C:\Users\USER\Desktop\Web\avatiach\images\face.bmp" height=18px width=18px alt="פייסבוק"></span> <span class=icons><img src = "C:\Users\USER\Desktop\Web\avatiach\images\insta.bmp" height=18px width=18px alt="אינסטגרם"></span>
+    </h2>
+    <div class="container">
+        <img id="main" src="images\1Red.bmp" width=700px alt="(Red)">
+        <div style="font-size: 47px;">
+            <div class="song_edit" id="song_block" contenteditable="true" data-placeholder="הקלידו פה את האבטיח שלכם"></div>
         </div>
+        <div class="song_edit" id="song_name" contenteditable="true" data-placeholder="(ופה את שם השיר)"></div>
     </div>
-
-    <p>בחרו צבע רקע, צרו אבטיח משלכם ושמרו <span><img src = "C:\Users\USER\Desktop\Web\avatiach\images\save.png" height=18px width=18px alt="(לחצו כאן)"></span> או שתפו: <span><img src = "C:\Users\USER\Desktop\Web\avatiach\images\face.bmp" height=18px width=18px alt="פייסבוק"></span>        <span><img src = "C:\Users\USER\Desktop\Web\avatiach\images\insta.bmp" height=18px width=18px alt="אינסטגרם"></span>
-    </p>
-    <div class="main">main box</div>
+    <div class="letter_size">גודל אות: <span id="L" onclick="changeSize(this)">א</span> <span id="M" onclick="changeSize(this)">א</span> <span id="S" onclick="changeSize(this)">א</span></div>
+    <!-- <button class="letter_size">
+        <ul>
+            <li id="L">א</li>
+            <li id="M">א</li>
+            <li id="S">א</li>
+        </ul>
+    </button> -->
     <div class="colors">
-        <div class="gray">אפור</div>
-        <div class="yellow">צהוב</div>
-        <div class="green">ירוק</div>
-        <div class="blue">כחול</div>
-        <div class="purple">סגול</div>
-        <div class="pink">ורוד</div>
-        <div class="red">אדום</div>
+        <div class="red"><span><img id="red" onclick="changeColor(this)" src="images\1Red.bmp" height=100px alt="(Red)"></span>אדום</div>
+        <div class="yellow"><span><img id="yellow" onclick="changeColor(this);" src="images\1Yellow.bmp" height=100px alt="(Yellow)"></span>צהוב</div>
+        <div class="green"><span><img id="green" onclick="changeColor(this)" src="images\1Green.bmp" height=100px alt="(Green)"></span>ירוק</div>
+        <div class="blue"><span><img id="blue" onclick="changeColor(this)" src="images\1Blue.bmp" height=100px alt="(Blue)"></span>כחול</div>
+        <div class="purple"><span><img id="purple" onclick="changeColor(this)" src="images\1Purple.bmp" height=100px alt="(Purple)"></span>סגול</div>
+        <div class="pink"><span><img id="pink" onclick="changeColor(this)" src="images\1Pink.bmp" height=100px alt="(Pink)"></span>ורוד</div>
+        <div class="grey"><span><img id="grey" onclick="changeColor(this)" src="images\1Grey.bmp" height=100px alt="(Grey)"></span>אפור</div>
+
     </div>
 
+    <script src="js/avatiach.js"></script>
 </body>
 
 </html>
